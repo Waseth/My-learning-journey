@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My first webpage</title>
-    <link rel="stylesheet" href="webpage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+     <link rel="stylesheet" href="webpage.css">
 </head>
 
 <body>
@@ -13,7 +17,7 @@
         <img alt="a & r logo" src="download.jpg" id="logo">
     </div>
     <img id="banner" src="ian-schneider-TamMbr4okv4-unsplash.jpg" alt="banner" height="200px">
-    <h1>About R & A Legacies</h1>
+    <h1>About R&A Legacies</h1>
     <div id="about">
         <div id="description">
             <p style="margin-top: 0;">
@@ -46,23 +50,46 @@
 
     <h2 id="opo">Job opportunities</h2>
     <div id="jobs">
-        <div>
-            <a href="mailto:wasethsapriso@gmail.com?subject=Frontend development" class="apply" target="_blank">Apply</a>
-            <h3 class="jobrole">Frontend developer</h3>
-            <div class="location">Nairobi, Kenya</div>
-        </div>
-
-        <div>
-            <a href="mailto:wasethsapriso@gmail.com?subject=Backend development" class="apply" target="_blank">Apply</a>
-            <h3 class="jobrole">Backend developer</h3>
-            <div class="location">Kisumu,Kenya</div>
-        </div>
-
-        <div>
-            <a href="mailto:wasethsapriso@gmail.com?subject=Data science" class="apply" target="_blank">Apply</a>
-            <h3 class="jobrole">Data scientist</h3>
-            <div class="location">Mombasa,Kenya</div>
-        </div>
+        <table id="jobs-table">
+            <tr class="jobs-header-row">
+                <th rowspan="2">Job Title</th>
+                <th colspan="2">Location</th>
+                <th rowspan="2">Salary</th>
+                <th rowspan="2">Posted on</th>
+            </tr>
+            <tr class="jobs-header-row">
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Frontend Developer</td>
+                <td>Nairobi</td>
+                <td>Kenya</td>
+                <td>ksh 300,000</td>
+                <td>February 12, 2024</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Full Stack Developer</td>
+                <td>Nairobi</td>
+                <td>Kenya</td>
+                <td>ksh 380,000</td>
+                <td>May 3, 2024</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Data scientist</td>
+                <td>Kisumu</td>
+                <td>Kenya</td>
+                <td>ksh 210,000</td>
+                <td>October 12, 2024</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Machine Learning Engineer</td>
+                <td>Mombasa</td>
+                <td>Kenya</td>
+                <td>ksh 280,000</td>
+                <td>June 18, 2024</td>
+            </tr>
+        </table>
     </div>
 
 
